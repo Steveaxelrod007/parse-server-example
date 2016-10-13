@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "serverURL": "https://point-of-interest-007.herokuapp.com/parse",
+      "appId": "Pj6DH4Y27zYwUXy3K63YxF",
+      "masterKey": "CpqLKV3wB98h4rw642Bfoe",
+      "appName": "POI Server",
+      "production": true
+    }
+ ],
+    "users": [
+    {
+      "user":"steve",
+      "pass":"password"
+    }
+  ]
+}
