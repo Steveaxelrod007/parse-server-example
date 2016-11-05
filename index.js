@@ -40,7 +40,7 @@ var api = new ParseServer({
 //     "dais-s3-bucket",
 //     {directAccess: true}
 //   )
-// });
+ });
 
 
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
