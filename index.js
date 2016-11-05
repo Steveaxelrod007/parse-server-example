@@ -20,7 +20,6 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
-   verbose: false,
    push: {
      ios: [
        {
@@ -34,7 +33,7 @@ var api = new ParseServer({
 //       production: true        // Specifies which environment to connect to: Production (if true) or Sandbox
 //       }
      ]
-//   },
+   },
 //   filesAdapter: new S3Adapter( 
 //     "", // S3 Environment Vars using IAM user 'daisAppUser'
 //     "",
