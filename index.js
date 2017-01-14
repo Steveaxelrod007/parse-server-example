@@ -20,20 +20,20 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
-   push: {
-     ios: [
-       {
-       pfx:        './keys/productionAPNS.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
-       bundleId:   'com.axee.pointofinterest', // The bundle identifier associate with your app
-       production: true        // Specifies which environment to connect to: Production (if true) or Sandbox
-       },
-//       {
-//       pfx:        './keys/ParseProductionAPNSCert.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
-//       bundleId:   'com.dais', // The bundle identifier associate with your app
-//       production: true        // Specifies which environment to connect to: Production (if true) or Sandbox
-//       }
-     ]
-   },
+  push: {
+    ios: [
+      {
+      pfx:        './keys/production.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
+      bundleId:   'com.dais', // The bundle identifier associate with your app
+      production: false        // Specifies which environment to connect to: Production (if true) or Sandbox
+      },
+      {
+      pfx:        './keys/production.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
+      bundleId:   'com.dais', // The bundle identifier associate with your app
+      production: true        // Specifies which environment to connect to: Production (if true) or Sandbox
+      }
+    ]
+  },
 //   filesAdapter: new S3Adapter( 
 //     "", // S3 Environment Vars using IAM user 'daisAppUser'
 //     "",
