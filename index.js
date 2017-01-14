@@ -24,12 +24,12 @@ var api = new ParseServer({
     ios: [
       {
       pfx:        './keys/production.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
-      bundleId:   'com.dais', // The bundle identifier associate with your app
+      bundleId:   'com.videoSaver', // The bundle identifier associate with your app
       production: false        // Specifies which environment to connect to: Production (if true) or Sandbox
       },
       {
       pfx:        './keys/production.p12', // The filename of private key and certificate in PFX or PKCS12 format from disk
-      bundleId:   'com.dais', // The bundle identifier associate with your app
+      bundleId:   'com.videoSaver', // The bundle identifier associate with your app
       production: true        // Specifies which environment to connect to: Production (if true) or Sandbox
       }
     ]
